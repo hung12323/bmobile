@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,Button,Alert,Image,TouchableOpacity,TextInput, } from 'react-native';
 
-export default function signupscr({navigation}) {
+export default function Signupscr({navigation}) {
   return (
     <View style={styles.container}>
      
@@ -13,27 +13,27 @@ export default function signupscr({navigation}) {
         
        
         placeholder="Full Name"
-        keyboardType="numeric"
+        //keyboardType="numeric"
       />
       <TextInput
        style={styles.input1}
         placeholder="Phone Number"
-        keyboardType="numeric"
+        //keyboardType="numeric"
       />
       <TextInput
         style={styles.input2}
         placeholder="Email Address"
-        keyboardType="numeric"
+        //keyboardType="numeric"
       />
       <TextInput
         style={styles.input3}
         placeholder="Password"
-        keyboardType="numeric"
+        //keyboardType="numeric"
       />
       <TouchableOpacity 
             style={styles.but1}
-            onPress={() => Alert.alert('Simple Button pressed')}
-            //onPress={() => navigation.navigate("signin")}
+            //onPress={() => Alert.alert('Simple Button pressed')}
+            onPress={() => navigation.navigate("Signin")}
           >
             <Text style={styles.but4}>Log In</Text>
           </TouchableOpacity>

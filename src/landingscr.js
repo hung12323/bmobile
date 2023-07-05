@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, Alert, Image, TouchableOpacity } from 'react-native';
 
-export default function landingscr({ navigation }) { // truyền navigation qua props
+export default function Landingscr({ navigation }) { // truyền navigation qua props
   return (
     <View style={styles.container}>
       <Image
@@ -16,7 +16,7 @@ export default function landingscr({ navigation }) { // truyền navigation qua 
         and check  out our delicious food.</Text>
         <TouchableOpacity 
             style={styles.but1}
-            onPress={() => navigation.navigate("signin")}
+            onPress={() => navigation.navigate("Signin")}
           >
             <Text style={styles.but4}>Log In</Text>
           </TouchableOpacity>
@@ -24,7 +24,7 @@ export default function landingscr({ navigation }) { // truyền navigation qua 
         <View>
           <TouchableOpacity 
             style={styles.but3}
-            onPress={() => navigation.navigate("signupscr")}
+            onPress={() => navigation.navigate("Signupscr")}
           >
             <Text style={styles.but2}>Sign In</Text>
           </TouchableOpacity>
