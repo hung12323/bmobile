@@ -19,13 +19,23 @@ export default function signin() {
         placeholder="PassWord"
         keyboardType="numeric"
       /> 
-      <View style={styles.but1}>
-<Button
-        title="Log In"
-        onPress={() => Alert.alert('Simple Button pressed')}
-        color='#5EA33A'
-      />
-    </View>
+       <TouchableOpacity 
+            style={styles.but1}
+            onPress={() => Alert.alert('Simple Button pressed')}
+            //onPress={() => navigation.navigate("signin")}
+          >
+            <Text style={styles.but4}>Log In</Text>
+          </TouchableOpacity>
+          <Text style={{color:'black',fontSize:20,marginBottom:30,}}>
+            Or
+          </Text>
+          <TouchableOpacity 
+            style={styles.but6}
+            onPress={() => Alert.alert('Simple Button pressed')}
+            //onPress={() => navigation.navigate("signin")}
+          >
+            <Text style={styles.but5}>FaceBook Login</Text>
+          </TouchableOpacity>
     </View>
     
     
@@ -79,5 +89,39 @@ const styles = StyleSheet.create({
         backgroundColor: "#5EA33A",
        marginBottom:400,
 
+    },
+    but4: {
+      color: 'white',
+      fontSize: 20,
+      backgroundColor: "#5EA33A",
+    },
+    but5: {
+      color: 'white',
+      fontSize: 20,
+      backgroundColor: "#344D91",
+    },
+    but1: {
+      width: 300,
+      borderRadius: 30,
+      height: 50,
+      margin: 20,
+      justifyContent: "center",
+      alignItems: 'center',
+      backgroundColor: "#5EA33A",
+      marginBottom: 10,
+      color: "white",
+      marginBottom:40,
+    },
+    but6: {
+      width: 300,
+      borderRadius: 30,
+      height: 50,
+      margin: 20,
+      justifyContent: "center",
+      alignItems: 'center',
+      backgroundColor: "#344D91",
+      marginBottom: 10,
+      color: "white",
+      marginBottom:250,
     },
 });

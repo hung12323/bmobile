@@ -30,13 +30,13 @@ export default function signupscr({navigation}) {
         placeholder="Password"
         keyboardType="numeric"
       />
-        <View style={styles.but1}>
-<Button
-        title="Log In"
-        onPress={() => Alert.alert('Simple Button pressed')}
-        color='#5EA33A'
-      />
-    </View>
+      <TouchableOpacity 
+            style={styles.but1}
+            onPress={() => Alert.alert('Simple Button pressed')}
+            //onPress={() => navigation.navigate("signin")}
+          >
+            <Text style={styles.but4}>Log In</Text>
+          </TouchableOpacity>
     </View>
     
     
@@ -111,4 +111,22 @@ marginRight:150,
            marginBottom:300,
     
         },
+        but4: {
+          color: 'white',
+          fontSize: 20,
+          backgroundColor: "#5EA33A",
+        },
+        but1: {
+          width: 250,
+          borderRadius: 30,
+          height: 40,
+          margin: 20,
+          justifyContent: "center",
+          alignItems: 'center',
+          backgroundColor: "#5EA33A",
+          marginBottom: 10,
+          color: "white",
+          marginBottom:300,
+        },
+        
 });
